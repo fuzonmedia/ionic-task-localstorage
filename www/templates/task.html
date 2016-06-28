@@ -1,0 +1,13 @@
+<ion-view view-title="Tasks - Ongoing">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="doc in documents" type="item-text-wrap">
+        <h2>{{doc.TaskName}}</h2>
+        <p>{{doc.taskDetails}}</p>
+        <ion-option-button class="button-assertive" ng-click="complete(doc,$index)">
+          Complete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
